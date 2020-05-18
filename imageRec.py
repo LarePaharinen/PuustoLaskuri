@@ -4,6 +4,44 @@ import matplotlib.pyplot as plt
 import time
 import functools as ft
 
+sqrSize = 32
+
+
+def countPixels(imgaeArray):
+
+	orangePx = 0
+	brownPx = 0
+	beigePx = 0
+	fadedGreenPx = 0
+	lightGreenPx = 0
+	semiLightGreenPx = 0
+	greenPx = 0
+	darkGreenPx = 0
+	lightBluePx = 0
+	darkBluePx = 0
+
+	for eachRow in imgaeArray:
+		for eachPix in eachRow:
+			if (eachPix[0] == 254  and eachPix[1] == 114 and eachPix[2] == 0):
+				orangePx += 1
+			elif (eachPix[0] == 254  and eachPix[1] == 152 and eachPix[2] == 70):
+				brownPx += 1
+			elif (eachPix[0] == 254  and eachPix[1] == 205 and eachPix[2] == 165):
+				beigePx += 1
+			elif (eachPix[0] == 195  and eachPix[1] == 255 and eachPix[2] == 195):
+				fadedGreenPx += 1
+			elif (eachPix[0] == 131  and eachPix[1] == 243 and eachPix[2] == 115):
+				lightGreenPx += 1
+			elif (eachPix[0] == 24  and eachPix[1] == 231 and eachPix[2] == 22):
+				semiLightGreenPx += 1
+			elif (eachPix[0] == 2  and eachPix[1] == 205 and eachPix[2] == 0):
+				greenPx += 1
+			elif (eachPix[0] == 1  and eachPix[1] == 130 and eachPix[2] == 0):
+				darkGreenPx += 1
+			elif (eachPix[0] == 23  and eachPix[1] == 0 and eachPix[2] == 220):
+				lightBluePx += 1
+			elif (eachPix[0] == 40  and eachPix[1] == 31 and eachPix[2] == 149):
+				darkBluePx += 1
 
 def laskePuusto(imgaeArray):
 	orangePx = 0
@@ -16,7 +54,6 @@ def laskePuusto(imgaeArray):
 	darkGreenPx = 0
 	lightBluePx = 0
 	darkBluePx = 0
-	sqrSize = 32
 
 
 
