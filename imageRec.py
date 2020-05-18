@@ -43,8 +43,7 @@ def laskePuusto(imgaeArray):
 				lightBluePx += 1
 			elif (eachPix[0] == 40  and eachPix[1] == 31 and eachPix[2] == 149):
 				darkBluePx += 1
-			#if eachPix[0] == 0 and eachPix[1] == 0 and eachPix[2] == 0:
-			#	time.sleep(2)
+
 
 
 	orange = orangePx / (sqrSize*sqrSize)
