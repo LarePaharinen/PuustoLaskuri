@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import time
 import functools as ft
 
-sqrSize = 32
+sqrSize = 16
 
 
 def countPixels(imgaeArray):
@@ -94,25 +94,26 @@ def laskePuusto(imgaeArray):
 	lightBlue = lightBluePx / (sqrSize*sqrSize)
 	darkBlue = darkBluePx / (sqrSize*sqrSize)
 
-	puusto = orange * 2 + brown * 16.5 + beige * 41.5 + fadedGreen * 66 + lightGreen * 89 + semiLightGreen * 114.5 + green * 144.5 + darkGreen * 180 + lightBlue * 232 + darkBlue * 270
+	puusto = (orange * 0 + brown * 1 + beige * 2 + fadedGreen * 3 + lightGreen * 4 + semiLightGreen * 5 + green * 9 + darkGreen * 20 + lightBlue * 44 + darkBlue * 107) * 0.0256
 
-	print("orange: " + str(round(orange,2)))
-	print("brown: " + str(round(brown,2)))
-	print("beige: " + str(round(beige,2)))
-	print("fadedGreen: " + str(round(fadedGreen,2)))
-	print("lightGreen: " + str(round(lightGreen,2)))
-	print("semiLightGreen: " + str(round(semiLightGreen,2)))
-	print("green: " + str(round(green,2)))
-	print("darkGreen: " + str(round(darkGreen,2)))
-	print("lightBlue: " + str(round(lightBlue,2)))
-	print("darkBlue: " + str(round(darkBlue,2)))
+	print("Kuusi:")
+	print("orange: " + str(round(orange,2) * 0.0256 * 0))
+	print("brown: " + str(round(brown,2) * 0.0256 * 1))
+	print("beige: " + str(round(beige,2) * 0.0256 * 2))
+	print("fadedGreen: " + str(round(fadedGreen,2) * 0.0256 * 3))
+	print("lightGreen: " + str(round(lightGreen,2) * 0.0256 * 4))
+	print("semiLightGreen: " + str(round(semiLightGreen,2) * 0.0256 * 5))
+	print("green: " + str(round(green,2) * 0.0256 * 9))
+	print("darkGreen: " + str(round(darkGreen,2) * 0.0256 * 20))
+	print("lightBlue: " + str(round(lightBlue,2) * 0.0256 * 44))
+	print("darkBlue: " + str(round(darkBlue,2) * 0.0256 * 107))
 	print(str(puusto) + "m^3")
 
 
 
 
 
-i = Image.open("images/ala1.png")
+i = Image.open("D:\\Vapaa-aika\\Koodaus\\PaikkaTietoikkunaRuutuLaskuri\\images\\KuusiTukkiRajattu.png")
 iar = np.array(i)
 
 laskePuusto(iar)
