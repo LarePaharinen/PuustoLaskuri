@@ -1,8 +1,8 @@
-#**PuustoLaskuri**
+# **PuustoLaskuri**
 
-###Python skriptit, joilla laskea [paikkatietoikkuna.fi](https://kartta.paikkatietoikkuna.fi/) karttatasojen avulla kiinteistön puuston määrä.
+### Python skriptit, joilla laskea [paikkatietoikkuna.fi](https://kartta.paikkatietoikkuna.fi/) karttatasojen avulla kiinteistön puuston määrä.
 
-##Käyttäminen:
+## Käyttäminen:
 
     1. Etsi oikea kiinteistö karttapalvelusta, ja lataa kuvat halutuista karttatasoista. Koko kiinteistön olisi hyvä mahtua kerralla kuvaan, mutta laskelma on epätarkempi, jos ala on todella iso. Kiinteistörajat kannattaa näkyä
     
@@ -22,7 +22,7 @@
        
     4.
     
-##TODO:
+## TODO:
     -Mahdollistaa full.py ajaminen, ilman että kaikkia seitsemää kuvaa ladattu (perus errorhandling muutenkin)
     -Eri kuva formaattien tutkiminen
 
