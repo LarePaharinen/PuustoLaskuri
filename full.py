@@ -10,7 +10,7 @@ start = time.time()
 
 kohde = "535-402-8-58"
 sqrSize = 32
-folderPath = "D:\\Vapaa-aika\\Koodaus\\PaikkaTietoikkunaRuutuLaskuri\\images\\" + kohde + "\\"
+folderPath = "D:\\Vapaa-aika\\Koodaus\\PuustoLaskuri\\images\\" + kohde + "\\"
 
 def laskePuustoMantyTukki(imgaeArray):
 	orangePx = 0
