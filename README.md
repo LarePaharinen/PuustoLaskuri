@@ -20,7 +20,7 @@
         
     Toimii .png kuvilla.
        
-    4.
+    4. Lisätietoja: lauri.hyvarinen1@gmail.com
     
 ## TODO:
     -Mahdollistaa full.py ajaminen, ilman että kaikkia seitsemää kuvaa ladattu (perus errorhandling muutenkin)
